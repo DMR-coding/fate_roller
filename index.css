@@ -7,7 +7,7 @@ html {
 
 @font-face {
   font-family: "fate";
-  src: url("static/Fate Core Font.ttf");
+  src: url("media/Fate Core Font.ttf");
 }
 footer {
   color: gray;
