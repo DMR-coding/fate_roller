@@ -2,10 +2,9 @@
   "name": "fate_roller",
   "version": "1.0.0",
   "description": "Roll some Fate dice",
-  "main": "index.js",
   "author": "Daniel F. Maxwell-Ross <daniel.maxwell-ross@carbonlighthouse.com>",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "dependencies": {},
   "devDependencies": {
     "prettier": "^2.0.5",

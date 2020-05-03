@@ -1,5 +1,36 @@
-body {
-  color: red;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+@font-face {
+  font-family: "fate";
+  src: url("static/Fate Core Font.ttf");
+}
+footer {
+  color: gray;
+  position: absolute;
+  bottom: 0;
+}
+
+.output {
+  display: none;
+  font-size: 60px;
+}
+.output .roll {
+  font-family: fate;
+  color: #006bba;
+}
+
+button {
+  color: white;
+  background-color: #006bba;
+  border: none;
+  appearance: none;
+  border-radius: 4px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

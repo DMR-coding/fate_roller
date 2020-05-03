@@ -1,3 +1,35 @@
-body {
-  color: red;
+$fate_blue: #006bba;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+@font-face {
+  font-family: "fate";
+  src: url("static/Fate Core Font.ttf");
+}
+footer {
+  color: gray;
+  position: absolute;
+  bottom: 0;
+}
+
+.output {
+  display: none;
+  .roll {
+    font-family: fate;
+    color: $fate_blue;
+  }
+  font-size: 60px;
+}
+
+button {
+  color: white;
+  background-color: $fate_blue;
+  border: none;
+  appearance: none;
+  border-radius: 4px;
+  font-size: 20px;
 }
