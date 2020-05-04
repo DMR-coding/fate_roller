@@ -26,13 +26,31 @@ function roll() {
 
 function output(dice, sum) {
   const output = document.getElementsByClassName("output")[0];
-  output.style.display = "block";
+
+  removeClass("latest");
+
   const line = document.createElement("div");
+  line.title = Date().toLocaleString();
+  line.className = "latest";
   line.innerHTML = `<span class=\"roll\">${dice}</span> = <span class=\"sum\">${sum}</span>`;
   output.prepend(line);
 }
 
+function removeClass(className, selector) {
+  if (!selector) {
+    selector = className;
+  }
+  const elements = Array.from(document.getElementsByClassName(selector));
+  elements.forEach((element) => {
+    element.className = element.className.replace(className, "");
+  });
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 function getRolls(n) {
   const rolls = Array(n).fill(NaN);
-  return rolls.map(() => Math.floor(Math.random() * 3) - 1);
+  return rolls.map(() => getRandomInt(3) - 1);
 }
